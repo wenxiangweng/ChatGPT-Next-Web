@@ -1,11 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getServerSideConfig } from "../config/server";
-import {
-  DEFAULT_MODELS,
-  OPENAI_BASE_URL,
-  ACCESS_CODE_PREFIX,
-  GEMINI_BASE_URL,
-} from "../constant";
+import { DEFAULT_MODELS, OPENAI_BASE_URL, ACCESS_CODE_PREFIX, GEMINI_BASE_URL } from "../constant";
 import { collectModelTable } from "../utils/model";
 import { makeAzurePath } from "../azure";
 
